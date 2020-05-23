@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="administrator" method="upgrade">
+	<name>MOD_ADMINISTRATORLINKGHSVS</name>
+	<author>G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)</author>
+	<creationDate>2013-09-19</creationDate>
+	<copyright>Copyright (C) 2013 - 2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.</copyright>
+	<license>GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0.html; See LICENSE.txt</license>
+	<authorUrl>http://www.ghsvs.de</authorUrl>
+	<version>2020.05.22</version>
+	<versionHistory>
+		https://updates.ghsvs.de/changelog.php?file=mod_administratorlinkghsvs
+	</versionHistory>
+	<description>MOD_ADMINISTRATORLINKGHSVS_XML_DESCRIPTION</description>
+
+	<updateservers><server type="extension" priority="1" name="MOD_ADMINISTRATORLINKGHSVS">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/mod_administratorlinkghsvs-update.xml</server></updateservers>
+
+	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/mod_administratorlinkghsvs-changelog.xml</changelogurl>
+
+	<infourl>https://updates.ghsvs.de/changelog.php?file=mod_administratorlinkghsvs</infourl>
+	
+	<scriptfile>installerScript.php</scriptfile>
+	<minimumPhp>7.2.0</minimumPhp>
+	<minimumJoomla>4.0.0-beta</minimumJoomla>
+	<!--<maximumJoomla>3.10.99999</maximumJoomla>
+	<maximumPhp>7.4.999999</maximumPhp>-->
+	<allowDowngrades>1</allowDowngrades>
+
+	<namespace path="src">Joomla\Module\AdministratorLinkGhsvs</namespace>
+	
+	<files>
+		<filename module="mod_administratorlinkghsvs">mod_administratorlinkghsvs.php</filename>
+		<filename>installerScript.php</filename>
+		<filename>LICENSE.txt</filename>
+		<folder>language</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+			<fieldset name="advanced">
+				
+				<field name="layout" type="modulelayout"
+				 label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
