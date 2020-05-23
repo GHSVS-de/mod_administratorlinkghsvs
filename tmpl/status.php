@@ -16,12 +16,17 @@ use Joomla\CMS\Language\Text;
 
 if (!empty($link))
 { ?>
-<div class="mod_administratorlinkghsvs">
-	<a href="<?php echo $link; ?>" class="btn btn-primary"
+<div class="header-item-content mod_administratorlinkghsvs">
+	<a class="d-flex" href="<?php echo $link; ?>"
 		title="<?php echo Text::_('MOD_ADMINISTRATORLINKGHSVS_NEW_TAB'); ?>"
 		target="_blank">
+		<div class="d-flex align-items-end mx-auto">
+			<span class="fas fa-home fa-fw" aria-hidden="true"></span>
+		</div>
+		<div class="align-items-center tiny">
 			<?php echo Text::_('MOD_ADMINISTRATORLINKGHSVS_ADMINISTRATION'); ?>
-		</a>
+		</div>
+	</a>
 </div>
 <?php
 }
