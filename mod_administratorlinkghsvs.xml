@@ -6,7 +6,7 @@
 	<copyright>Copyright (C) 2013 - 2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.</copyright>
 	<license>GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0.html; See LICENSE.txt</license>
 	<authorUrl>http://www.ghsvs.de</authorUrl>
-	<version>2020.05.23</version>
+	<version>2020.09.27</version>
 	<versionHistory>
 		https://updates.ghsvs.de/changelog.php?file=mod_administratorlinkghsvs
 	</versionHistory>
@@ -47,7 +47,7 @@
 				 label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
 
-				<field name="moduleclass_sfx" type="text"
+				<field name="moduleclass_sfx" type="textarea"
 					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
 
 			</fieldset>
