@@ -8,6 +8,8 @@
 - Joomla-4-Modul. Backend-Button zum Öffnen einer zusätzlichen Joomla-Administration in einem neuen Browser-Tabulator.
 - Weil Entfernen und Ändern ohne Nachdenken f'ing modern ist, wurde der <code>Administration</code>-Link aus dem <code>Benutzerstatus</code>-Modul in Joomla 4 ersatzlos entfernt. Damit war es unter Joomla 3 möglich, ein zusätzliches Backend in einem NEUEN Browsertabulator VON ÜBERALL zu öffnen, auch in Bearbeitungsformularen.
 
+## Usage
+![Positions and Layouts](mod_administratorlinkghsvs_Positions.jpg?raw=true "Positions and Layouts")
 
 ## Usage (en)
 - Install the module (https://github.com/GHSVS-de/mod_administratorlinkghsvs/releases).
