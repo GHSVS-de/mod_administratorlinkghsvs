@@ -3,7 +3,7 @@
  * @package administrator.module mod_administratorlinkghsvs for Joomla!
  * @version See mod_administratorlinkghsvs.xml
  * @author G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)
- * @copyright Copyright (C) 2011 - 2020, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
+ * @copyright Copyright (C) 2011, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
  * @license See mod_administratorlinkghsvs.xml
  * @authorUrl http://www.ghsvs.de
  */

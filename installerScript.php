@@ -1,5 +1,14 @@
 <?php
 /**
+ * @package administrator.module mod_administratorlinkghsvs for Joomla!
+ * @version See mod_administratorlinkghsvs.xml
+ * @author G@HService Berlin Neukölln, Volkmar Volli Schlothauer
+ * @copyright Copyright (C) 2011, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
+ * @license See mod_administratorlinkghsvs.xml
+ * @authorUrl http://www.ghsvs.de
+ */
+
+/*
  * Use in your extension manifest file (any tag is optional!!!!!):
  * <minimumPhp>7.0.0</minimumPhp>
  * <minimumJoomla>3.9.0</minimumJoomla>
@@ -24,7 +33,7 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 	 * @var    array
 	 * @since  2.0
 	 */
-	protected $deleteFiles = array();
+	protected $deleteFiles = [];
 
 	/**
 	 * A list of folders to be deleted with method removeFiles().
@@ -32,17 +41,15 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 	 * @var    array
 	 * @since  2.0
 	 */
-	protected $deleteFolders = array(
-	);
+	protected $deleteFolders = [];
 
 	public function __construct()
 	{
-		
-		$this->deleteFiles = array(
+		$this->deleteFiles = [
 			$this->basePath . '/helper.php',
 			$this->basePath . '/language/en-GB/en-GB.mod_administratorlinkghsvs.ini',
 			$this->basePath . '/language/en-GB/en-GB.mod_administratorlinkghsvs.sys.ini',
-		);
+		];
 	}
 
 	public function preflight($type, $parent)
@@ -73,7 +80,7 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 				if ($maximumPhp && version_compare(PHP_VERSION, $maximumPhp, '>'))
 				{
 					$msg = 'Your PHP version (' . PHP_VERSION . ') is too high for this extension. Maximum PHP version is: ' . $maximumPhp . '.';
-	
+
 					Log::add($msg, Log::WARNING, 'jerror');
 				}
 
@@ -88,7 +95,7 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 				$this->allowDowngrades = true;
 			}
 		}
-		
+
 		if (!parent::preflight($type, $parent))
 		{
 			return false;
