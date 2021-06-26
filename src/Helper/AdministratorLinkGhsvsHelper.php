@@ -4,7 +4,7 @@
  * @version See mod_administratorlinkghsvs.xml
  * @author G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)
  * @copyright Copyright (C) 2011, G@HService Berlin Neukölln, Volkmar Volli Schlothauer. All rights reserved.
- * @license See mod_administratorlinkghsvs.xml
+ * @license GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0.html; See LICENSE.txt
  * @authorUrl http://www.ghsvs.de
  */
 ?>
