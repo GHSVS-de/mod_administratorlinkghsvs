@@ -1,4 +1,4 @@
-# Administration in new tab by GHSVS.de (mod_administratorlinkghsvs)
+# Administration in new tab by GHSVS.de (mod_administratorlinkghsvs for Joomla 4)
 
 ## Description (en)
 - Joomla 4 module. Backend button to open an additional administration in a new browser tabulator.
