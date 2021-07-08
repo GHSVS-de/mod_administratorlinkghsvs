@@ -13,12 +13,14 @@
 
 ## Usage (en)
 - Install the module (https://github.com/GHSVS-de/mod_administratorlinkghsvs/releases).
+- - Alternative download location: https://extensions.joomla.org/extension/administration/admin-navigation/administration-in-new-tab-by-ghsvs-de/
 - Create a new **Administrator** module of type <code>Administration in new tab by GHSVS.de</code>.
 - If you want to publish it in module position <code>status</code> select <code>Layout</code> <code>status</code>. You will see a house icon with a nearly unreadable label (Not my fault. That's modern.) <code>Administration</code> in the status bar of Joomla's backend template.
 - The standard <code>Layout</code> <code>default</code> displays a simple blue <code>Bootstrap</code> button. I use this variant in positions <code>top</code> and/or <code>bottom</code>.
 
 ## Usage (de)
 - Installieren Sie das Modul (https://github.com/GHSVS-de/mod_administratorlinkghsvs/releases).
+- - Alternativer Download: https://extensions.joomla.org/extension/administration/admin-navigation/administration-in-new-tab-by-ghsvs-de/
 - Legen Sie ein neues **Administrator**-Modul vom Typ <code>Administration in new tab by GHSVS.de</code> an.
 - Wenn Sie es in der Modulposition <code>Status</code> veröffentlichen wollen, wählen Sie <code>Layout</code> <code>Status</code>. Sie sehen dann in der Statusleiste des Backend-Templates von Joomla ein Haussymbol mit einer fast unleserlichen Beschriftung (Nicht meine Schuld, das ist modern.) <code>Administration</code>.
 - Das Standard-<code>Layout</code> <code>default</code> zeigt eine einfache blaue <code>Bootstrap</code>-Schaltfläche an. Ich verwende diese Variante an den Positionen <code>top</code> und/oder <code>bottom</code>.
