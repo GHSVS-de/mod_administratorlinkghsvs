@@ -15,5 +15,13 @@ use Joomla\Module\AdministratorLinkGhsvs\Administrator\Helper\AdministratorLinkG
 
 $link = AdministratorLinkGhsvsHelper::getLink();
 
+if (empty($link))
+{
+	return;
+}
+
+$iconClass = AdministratorLinkGhsvsHelper::getIconClass($params);
+$labelling = AdministratorLinkGhsvsHelper::getLabelling($params);
+$titleAttr = AdministratorLinkGhsvsHelper::getTitleAttr($params);
 require ModuleHelper::getLayoutPath('mod_administratorlinkghsvs',
 	$params->get('layout', 'default'));

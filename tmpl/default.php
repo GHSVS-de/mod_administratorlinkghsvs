@@ -12,14 +12,17 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Language\Text;
 
-if (!empty($link))
-{ ?>
+/*
+Available variables from helper:
+- String $link
+- String $iconClass
+- String $labelling
+- String $titleAttr
+*/
+?>
 <div class="mod_administratorlinkghsvs">
-	<a href="<?php echo $link; ?>" class="btn btn-primary btn-md"
-		title="<?php echo Text::_('MOD_ADMINISTRATORLINKGHSVS_NEW_TAB'); ?>"
-		target="_blank">
-			<?php echo Text::_('MOD_ADMINISTRATORLINKGHSVS_ADMINISTRATION'); ?>
-		</a>
+	<a href="<?php echo $link; ?>" class="btn btn-primary btn-md" target="_blank"
+		<?php	echo $titleAttr ? 'title="' . $titleAttr . '"': '';?>>
+			<?php echo $labelling; ?>
+	</a>
 </div>
-<?php
-}
