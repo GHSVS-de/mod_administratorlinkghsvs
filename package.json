@@ -22,7 +22,7 @@
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/mod_administratorlinkghsvs",
-		"infosDE": "",
+		"infosDE": "https://github.com/GHSVS-de/mod_administratorlinkghsvs#readme",
 		"infosEN": "https://github.com/GHSVS-de/mod_administratorlinkghsvs#readme",
 		"docsDE": "",
 		"docsEN": "",
@@ -40,7 +40,7 @@
 	"allowDowngrades": "1",
 	"creationDate": "2013-09-19",
 	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
-	"copyright": "(C) 2021, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)",
+	"copyright": "(C) 2013, G@HService Berlin Neukölln, Volkmar Volli Schlothauer (ghsvs.de)",
 	"author": {
 		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
 		"url": "https://ghsvs.de"
