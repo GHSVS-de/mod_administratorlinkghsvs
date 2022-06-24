@@ -152,7 +152,7 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 				return;
 			}
 
-			$ids = \array_keys($ids);
+			$ids = array_keys($ids);
 			$ids = implode(',', $ids);
 
 			// Delete from update sites

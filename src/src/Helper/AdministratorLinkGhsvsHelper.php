@@ -40,7 +40,6 @@ abstract class AdministratorLinkGhsvsHelper
 		return self::clean($iconClass);
 	}
 
-
 	/**
 	 * Get the labelling of the button. Also language strings are allowed.
 	 *
