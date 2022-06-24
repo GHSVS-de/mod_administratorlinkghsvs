@@ -24,3 +24,34 @@
 - Legen Sie ein neues **Administrator**-Modul vom Typ <code>Administration in new tab by GHSVS.de</code> an.
 - Wenn Sie es in der Modulposition <code>Status</code> veröffentlichen wollen, wählen Sie <code>Layout</code> <code>Status</code>. Sie sehen dann in der Statusleiste des Backend-Templates von Joomla ein Haussymbol mit einer fast unleserlichen Beschriftung (Nicht meine Schuld, das ist modern.) <code>Administration</code>.
 - Das Standard-<code>Layout</code> <code>default</code> zeigt eine einfache blaue <code>Bootstrap</code>-Schaltfläche an. Ich verwende diese Variante an den Positionen <code>top</code> und/oder <code>bottom</code>.
+
+-----------------------------------------------------
+
+# My personal build procedure (WSL 1, Debian, Win 10)
+
+**@since v2022.06.24: Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
+
+- Prepare/adapt `./package.json`.
+- `cd /mnt/z/git-kram/mod_administratorlinkghsvs`
+
+## node/npm updates/installation
+- `npm run updateCheck` or (faster) `npm outdated`
+- `npm run update` (if needed) or (faster) `npm update --save-dev`
+- `npm install` (if needed)
+
+## PHP Codestyle
+If you think it's worth it.
+- `cd /mnt/z/git-kram/php-cs-fixer-ghsvs`
+- `npm run mod_administratorlinkghsvsDry` (= dry test run).
+- `npm run mod_administratorlinkghsvs` (= cleans code).
+- `cd /mnt/z/git-kram/mod_administratorlinkghsvs` (back to this repo).
+
+## Build installable ZIP package
+- `node build.js`
+- New, installable ZIP is in `./dist` afterwards.
+- All packed files for this ZIP can be seen in `./package`. **But only if you disable deletion of this folder at the end of `build.js`**.s
+
+### For Joomla update and changelog server
+- Create new release with new tag.
+- - See release description in `dist/release.txt`.
+- Extracts(!) of the update and changelog XML for update and changelog servers are in `./dist` as well. Copy/paste and necessary additions.
