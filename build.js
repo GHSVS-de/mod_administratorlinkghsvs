@@ -12,7 +12,7 @@ const replaceXml = require(`${pathBuildKram}/build/replaceXml.js`);
 const helper = require(`${pathBuildKram}/build/helper.js`);
 
 const pc = require(`${pathBuildKram}/node_modules/picocolors`);
-const fse = require(`${pathBuildKram}/node_modules/fs-extra`);
+//const fse = require(`${pathBuildKram}/node_modules/fs-extra`);
 
 let replaceXmlOptions = {};
 let zipOptions = {};
@@ -39,13 +39,7 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	to = `./package`;
 	await helper.copy(from, to)
 
-	if (!(await fse.exists("./dist")))
-	{
-		await fse.mkdir("./dist"
-		).then(
-			answer => console.log(pc.yellow(pc.bold(`Created "./dist".`)))
-		);
-  }
+	await helper.mkdir('./dist');
 
 	const zipFilename = `${name}-${version}.zip`;
 
