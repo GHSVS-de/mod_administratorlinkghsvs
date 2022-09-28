@@ -14,7 +14,14 @@ const helper = require(`${pathBuildKram}/build/helper.js`);
 const pc = require(`${pathBuildKram}/node_modules/picocolors`);
 //const fse = require(`${pathBuildKram}/node_modules/fs-extra`);
 
-let replaceXmlOptions = {};
+let replaceXmlOptions = {
+	"xmlFile": '',
+	"zipFilename": '',
+	"checksum": '',
+	"dirname": __dirname,
+	"jsonString": '',
+	"versionSub": ''
+};
 let zipOptions = {};
 let from = "";
 let to = "";
@@ -43,12 +50,8 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 
 	const zipFilename = `${name}-${version}.zip`;
 
-	replaceXmlOptions = {
-		"xmlFile": Manifest,
-		"zipFilename": zipFilename,
-		"checksum": "",
-		"dirname": __dirname
-	};
+	replaceXmlOptions.xmlFile = Manifest;
+	replaceXmlOptions.zipFilename = zipFilename;
 
 	await replaceXml.main(replaceXmlOptions);
 	from = Manifest;
