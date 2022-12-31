@@ -19,9 +19,19 @@ use Joomla\CMS\Router\Route;
 use Joomla\CMS\Uri\Uri;
 use Joomla\Registry\Registry;
 
-abstract class AdministratorLinkGhsvsHelper
+class AdministratorLinkGhsvsHelper
 {
-	public static function getLink(): string
+	public function getDisplayData(Registry $moduleParams): array
+	{
+		return [
+			'link' => static::getLink(),
+			'iconClass' => static::getIconClass($moduleParams),
+			'labelling' => static::getLabelling ($moduleParams),
+			'titleAttr' => static::getTitleAttr ($moduleParams),
+		];
+	}
+
+	protected static function getLink(): string
 	{
 		return (string) new Uri(Route::_('index.php?'));
 	}
@@ -33,11 +43,11 @@ abstract class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The icon class of the button or empty string.
 	 */
-	public static function getIconClass(Registry $params) : string
+	protected static function getIconClass(Registry $moduleParams) : string
 	{
-		$iconClass = trim($params->get('iconClass', 'icon-home'));
+		$iconClass = trim($moduleParams->get('iconClass', 'icon-home'));
 
-		return self::clean($iconClass);
+		return static::clean($iconClass);
 	}
 
 	/**
@@ -47,14 +57,14 @@ abstract class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The translated label of the button or empty string.
 	 */
-	public static function getLabelling(Registry $params) : string
+	protected static function getLabelling(Registry $moduleParams) : string
 	{
-		$labelling = trim($params->get(
+		$labelling = trim($moduleParams->get(
 			'labelling',
 			'MOD_ADMINISTRATORLINKGHSVS_ADMINISTRATION'
 		));
 
-		return self::clean($labelling);
+		return static::clean($labelling);
 	}
 
 	/**
@@ -64,22 +74,19 @@ abstract class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The translated text of title attribute of the button link or empty string.
 	 */
-	public static function getTitleAttr(Registry $params) : string
+	protected static function getTitleAttr(Registry $moduleParams) : string
 	{
-		$titleAttr = trim($params->get(
+		$titleAttr = trim($moduleParams->get(
 			'titleAttr',
 			'MOD_ADMINISTRATORLINKGHSVS_NEW_TAB'
 		));
 
-		return self::clean($titleAttr);
+		return static::clean($titleAttr);
 	}
 
-	private static function clean(String $string) : string
+	protected static function clean(String $string) : string
 	{
-		return empty($string) ? '' : htmlspecialchars(
-			Text::_($string),
-			ENT_QUOTES,
-			'UTF-8'
-		);
+		return empty($string) ? '' : htmlspecialchars( Text::_($string), ENT_QUOTES,
+			'UTF-8');
 	}
 }
