@@ -25,15 +25,18 @@ use Joomla\CMS\Log\Log;
 
 class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 {
-	protected $basePath = '/administrator/modules/mod_administratorlinkghsvs';
-
 	/**
 	 * A list of files to be deleted with method removeFiles().
 	 *
 	 * @var    array
 	 * @since  2.0
 	 */
-	protected $deleteFiles = [];
+	protected $deleteFiles = [
+		'/administrator/modules/mod_administratorlinkghsvs/helper.php',
+		'/administrator/modules/mod_administratorlinkghsvs/mod_administratorlinkghsvs.php',
+		'/administrator/modules/mod_administratorlinkghsvs/language/en-GB/en-GB.mod_administratorlinkghsvs.ini',
+		'/administrator/modules/mod_administratorlinkghsvs/language/en-GB/en-GB.mod_administratorlinkghsvs.sys.ini',
+	];
 
 	/**
 	 * A list of folders to be deleted with method removeFiles().
@@ -42,15 +45,6 @@ class mod_administratorLinkGhsvsInstallerScript extends InstallerScript
 	 * @since  2.0
 	 */
 	protected $deleteFolders = [];
-
-	public function __construct()
-	{
-		$this->deleteFiles = [
-			$this->basePath . '/helper.php',
-			$this->basePath . '/language/en-GB/en-GB.mod_administratorlinkghsvs.ini',
-			$this->basePath . '/language/en-GB/en-GB.mod_administratorlinkghsvs.sys.ini',
-		];
-	}
 
 	public function preflight($type, $parent)
 	{

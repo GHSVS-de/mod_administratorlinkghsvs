@@ -2,15 +2,15 @@
 	"name": "mod_administratorlinkghsvs",
 	"nameReal": "mod_administratorlinkghsvs",
 	"filename": "mod_administratorlinkghsvs",
-	"version": "2022.06.24",
-	"versionCompare": "2021.06.24",
+	"version": "2023.01.01",
+	"versionCompare": "2022.06.24",
 	"update": {
 		"type": "module",
 		"folder": "",
 		"client": "administrator",
 		"tag": "stable",
 		"targetplatform": [
-			"4.*"
+			"4.[2345]"
 		],
 		"namespace": "Joomla\\Module\\AdministratorLinkGhsvs"
 	},
@@ -30,12 +30,13 @@
 			"PHP 8.0",
 			"PHP 8.1",
 			"PHP 7.4",
-			"Joomla 4.1"
+			"Joomla 4.2",
+			"Joomla 4.3-dev"
 		]
 	},
 	"minimumPhp": "7.2.0",
 	"maximumPhp": "8.99999.99999",
-	"minimumJoomla": "4.0.0",
+	"minimumJoomla": "4.2.0",
 	"maximumJoomla": "4.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2013-09-19",
