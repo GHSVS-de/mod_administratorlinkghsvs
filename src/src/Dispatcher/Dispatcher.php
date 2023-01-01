@@ -1,6 +1,11 @@
 <?php
 namespace Joomla\Module\AdministratorLinkGhsvs\Administrator\Dispatcher;
+
 \defined('_JEXEC') or die;
+
+use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
+use Joomla\CMS\Helper\HelperFactoryAwareInterface;
+use Joomla\CMS\Helper\HelperFactoryAwareTrait;
 
 class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareInterface
 {
