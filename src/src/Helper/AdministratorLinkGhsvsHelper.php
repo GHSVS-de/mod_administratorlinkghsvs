@@ -24,14 +24,14 @@ class AdministratorLinkGhsvsHelper
 	public function getDisplayData(Registry $moduleParams): array
 	{
 		return [
-			'link' => static::getLink(),
-			'iconClass' => static::getIconClass($moduleParams),
-			'labelling' => static::getLabelling ($moduleParams),
-			'titleAttr' => static::getTitleAttr ($moduleParams),
+			'link' => $this->getLink(),
+			'iconClass' => $this->getIconClass($moduleParams),
+			'labelling' => $this->getLabelling ($moduleParams),
+			'titleAttr' => $this->getTitleAttr ($moduleParams),
 		];
 	}
 
-	protected static function getLink(): string
+	private function getLink(): string
 	{
 		return (string) new Uri(Route::_('index.php?'));
 	}
@@ -43,11 +43,11 @@ class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The icon class of the button or empty string.
 	 */
-	protected static function getIconClass(Registry $moduleParams) : string
+	private function getIconClass(Registry $moduleParams) : string
 	{
 		$iconClass = trim($moduleParams->get('iconClass', 'icon-home'));
 
-		return static::clean($iconClass);
+		return $this->clean($iconClass);
 	}
 
 	/**
@@ -57,14 +57,14 @@ class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The translated label of the button or empty string.
 	 */
-	protected static function getLabelling(Registry $moduleParams) : string
+	private function getLabelling(Registry $moduleParams) : string
 	{
 		$labelling = trim($moduleParams->get(
 			'labelling',
 			'MOD_ADMINISTRATORLINKGHSVS_ADMINISTRATION'
 		));
 
-		return static::clean($labelling);
+		return $this->clean($labelling);
 	}
 
 	/**
@@ -74,17 +74,17 @@ class AdministratorLinkGhsvsHelper
 	 *
 	 * @return  string    The translated text of title attribute of the button link or empty string.
 	 */
-	protected static function getTitleAttr(Registry $moduleParams) : string
+	private function getTitleAttr(Registry $moduleParams) : string
 	{
 		$titleAttr = trim($moduleParams->get(
 			'titleAttr',
 			'MOD_ADMINISTRATORLINKGHSVS_NEW_TAB'
 		));
 
-		return static::clean($titleAttr);
+		return $this->clean($titleAttr);
 	}
 
-	protected static function clean(String $string) : string
+	private function clean(String $string) : string
 	{
 		return empty($string) ? '' : htmlspecialchars( Text::_($string), ENT_QUOTES,
 			'UTF-8');
