@@ -10,7 +10,8 @@
 		"client": "administrator",
 		"tag": "stable",
 		"targetplatform": [
-			"4.[2345]"
+			"4.[23456789]",
+			"5.*"
 		],
 		"namespace": "Joomla\\Module\\AdministratorLinkGhsvs"
 	},
@@ -37,7 +38,7 @@
 	"minimumPhp": "7.2.0",
 	"maximumPhp": "8.99999.99999",
 	"minimumJoomla": "4.2.0",
-	"maximumJoomla": "4.9999.9999",
+	"maximumJoomla": "5.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2013-09-19",
 	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
