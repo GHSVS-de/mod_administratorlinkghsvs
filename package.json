@@ -5,6 +5,7 @@
 	"version": "2023.09.23",
 	"versionCompare": "2023.01.01",
 	"update": {
+		"infourl": "https://github.com/GHSVS-de/mod_administratorlinkghsvs{{thisRelease}}",
 		"type": "module",
 		"folder": "",
 		"client": "administrator",
