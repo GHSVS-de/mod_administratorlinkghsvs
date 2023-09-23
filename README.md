@@ -1,12 +1,12 @@
 # Administration in new tab by GHSVS.de (mod_administratorlinkghsvs for Joomla 4)
 
 ## Description (en)
-- Joomla 4 module. Backend button to open an additional administration in a new browser tabulator.
-- Because removing and changing without thinking is f'ing modern the <code>Administration</code> link has been removed from the <code>User Status</code> module in Joomla 4 without replacement. It made it possible to open an additional backend in a NEW browser tabulator FROM EVERYWHERE, also in edit forms.
+- Joomla 4/5 module. Backend button to open an additional administration in a new browser tabulator.
+- In Joomla 4 the <code>Administration</code> link has been removed from the <code>User Status</code> module without replacement. It made it possible to open an additional backend in a NEW browser tabulator FROM EVERYWHERE, also in edit forms.
 
 ## Description (de)
-- Joomla-4-Modul. Backend-Button zum Öffnen einer zusätzlichen Joomla-Administration in einem neuen Browser-Tabulator.
-- Weil Entfernen und Ändern ohne Nachdenken f'ing modern ist, wurde der <code>Administration</code>-Link aus dem <code>Benutzerstatus</code>-Modul in Joomla 4 ersatzlos entfernt. Damit war es unter Joomla 3 möglich, ein zusätzliches Backend in einem NEUEN Browsertabulator VON ÜBERALL zu öffnen, auch in Bearbeitungsformularen.
+- Joomla-4/5-Modul. Backend-Button zum Öffnen einer zusätzlichen Joomla-Administration in einem neuen Browser-Tabulator.
+- In Joomla 4 wurde der <code>Administration</code>-Link aus dem <code>Benutzerstatus</code>-Modul ersatzlos entfernt. Damit war es unter Joomla 3 möglich, ein zusätzliches Backend in einem NEUEN Browsertabulator VON ÜBERALL aus zu öffnen, auch in Bearbeitungsformularen.
 
 ## Usage
 ![Positions and Layouts](mod_administratorlinkghsvs_Positions.jpg?raw=true "Positions and Layouts")
