@@ -2,8 +2,8 @@
 	"name": "mod_administratorlinkghsvs",
 	"nameReal": "mod_administratorlinkghsvs",
 	"filename": "mod_administratorlinkghsvs",
-	"version": "2023.01.01",
-	"versionCompare": "2022.06.24",
+	"version": "2023.09.23",
+	"versionCompare": "2023.01.01",
 	"update": {
 		"type": "module",
 		"folder": "",
@@ -31,8 +31,8 @@
 			"PHP 8.0",
 			"PHP 8.1",
 			"PHP 7.4",
-			"Joomla 4.2",
-			"Joomla 4.3-dev"
+			"Joomla 4.3",
+			"Joomla 5.0.0-beta3-dev"
 		]
 	},
 	"minimumPhp": "7.2.0",
